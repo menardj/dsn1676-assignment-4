@@ -16,3 +16,19 @@ html {
 *, *::before, *::after {
 	box-sizing: inherit;
 }
+
+h3 {
+	font-family: Arial, sans-serif;
+}
+
+.blueberries {
+	color: blue;
+}
+
+.grapes {
+	color: purple;
+}
+
+.redcurrant {
+	color: red;
+}

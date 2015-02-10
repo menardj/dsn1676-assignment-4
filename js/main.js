@@ -1,5 +1,5 @@
 var blueberries = {
-	name: 'Blueberries',
+	name: '<p class="blueberries">Blueberries</p>',
 	species: 'Vaccinium corymbosum',
 	growsOnShrub: true,
 	energy: '240 kJ',
@@ -8,7 +8,7 @@ var blueberries = {
 };
 
 var grapes = {
-	name: 'Grapes',
+	name: '<p class="grapes">Grapes</p>',
 	species: 'Vitis vinifera',
 	growsOnShrub: false,
 	energy: '288 kJ',
@@ -17,7 +17,7 @@ var grapes = {
 };
 
 var redCurrant = {
-	name: 'Red Currant',
+	name: '<p class="redcurrant">Red Currant</p>',
 	species: 'Ribes rubrum',
 	growsOnShrub: true,
 	energy: '234 kJ',
@@ -27,7 +27,9 @@ var redCurrant = {
 
 var berries = [blueberries, grapes, redCurrant];
 
-berries.forEach(function (item) {
+var writeBerries = function (allBerries) {
+
+	allBerries.forEach(function (item) {
 
 	document.write('<h3>' + item.name + '</h3>');
 
@@ -49,4 +51,8 @@ berries.forEach(function (item) {
 	document.write('<dd>' + item.protein + '</dd>');
 
 	document.write('</dl>');
-});
+	});
+
+}
+
+writeBerries( berries );
